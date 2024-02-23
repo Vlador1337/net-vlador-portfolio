@@ -12,8 +12,7 @@ export default function Hero() {
                 </p>
                 <a
                     className={styles.contactBtn}
-                    href="mailto:vladorwork@gmail.com"
-                >
+                    href="mailto:vladorwork@gmail.com">
                     Связаться со мной
                 </a>
             </div>

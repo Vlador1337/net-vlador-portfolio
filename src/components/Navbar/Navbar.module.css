@@ -32,6 +32,24 @@
     color: var(--color-mocha-text);
     text-decoration: none;
 }
+.menuItems li a {
+    position: relative;
+}
+
+.menuItems li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-mocha-text);
+    transition: width 0.3s ease-in-out;
+}
+
+.menuItems li a:hover::after {
+    width: 100%;
+}
 .menuBtn {
     display: none;
 }

@@ -20,14 +20,12 @@ export default function Navbar() {
                             : getImageUrl('nav/menuIcon.png')
                     }
                     alt="menu-button"
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                ></img>
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}></img>
                 <ul
                     className={`${styles.menuItems} ${
                         isMenuOpen && styles.isMenuOpen
                     }`}
-                    onClick={() => setIsMenuOpen(false)}
-                >
+                    onClick={() => setIsMenuOpen(false)}>
                     <li>
                         <a href="#about">Обо мне</a>
                     </li>
