@@ -1,90 +1,90 @@
 @import '../../vars.css';
 
 .navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 61px;
-    z-index: 2;
-    margin: 0 10%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 61px;
+	z-index: 2;
+	margin: 0 10%;
 }
 
 .title {
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-mocha-text);
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--color-mocha-text);
 }
 
 .menu {
-    display: flex;
+	display: flex;
 }
 
 .menuItems {
-    display: flex;
-    gap: 47px;
-    list-style: none;
+	display: flex;
+	gap: 47px;
+	list-style: none;
 }
 
 .menuItems a {
-    font-size: 25px;
-    color: var(--color-mocha-text);
-    text-decoration: none;
+	font-size: 25px;
+	color: var(--color-mocha-text);
+	text-decoration: none;
 }
 .menuItems li a {
-    position: relative;
+	position: relative;
 }
 
 .menuItems li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--color-mocha-text);
-    transition: width 0.3s ease-in-out;
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background-color: var(--color-mocha-text);
+	transition: width 0.3s ease-in-out;
 }
 
 .menuItems li a:hover::after {
-    width: 100%;
+	width: 100%;
 }
 .menuBtn {
-    display: none;
+	display: none;
 }
 
 @media screen and (max-width: 830px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 
-    .menu {
-        position: absolute;
-        right: 0;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
-    }
-    .menuBtn {
-        display: block;
-        cursor: pointer;
-    }
-    .menuItems {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background: var(--color-mocha-surface2);
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    }
-    .isMenuOpen {
-        display: flex;
-        z-index: 1;
-    }
+	.menu {
+		position: absolute;
+		right: 0;
+		margin-right: 10%;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 11px;
+		z-index: 3;
+	}
+	.menuBtn {
+		display: block;
+		cursor: pointer;
+	}
+	.menuItems {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		gap: 13px;
+		border-radius: 10px;
+		background: var(--color-mocha-surface2);
+		padding: 24px 33px;
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+	}
+	.isMenuOpen {
+		display: flex;
+		z-index: 1;
+	}
 }
